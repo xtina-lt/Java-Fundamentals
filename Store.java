@@ -24,6 +24,7 @@ class Store {
         double new_price = taxPrice();
         System.out.printf("Incerase price from %.2f + %.2f = %.2f", p, e, new_price);
     }
+
     double taxPrice(){
     // method using attribute
         return price + price * .08;
