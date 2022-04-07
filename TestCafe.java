@@ -23,7 +23,7 @@ class TestCafe {
         //test. printPriceChart("Soy Latte", 5.50, 3);
 
         // # 6) ARRAYLIST INPUT ADD
-        // # 6) add new customers 
+        // # 6) add new customers
         ArrayList<String> customers = new ArrayList<String>();
         customers.add("xtina.codes");
         customers.add("peanut butter");

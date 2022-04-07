@@ -25,8 +25,9 @@ Loops:
 
 ArrayList:
     - Holiday.java 
+
 HashMaps:
-    - Conditionals.java
+    - Data.java
 
 List Comprehension for Java:
     - ListCompPractice.java
