@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class TestCafe {
+class TestCafe {
     public static void main(String[] args){
 
         // # 1) CREATE OBJECT of class CafeUtil
