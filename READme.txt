@@ -23,6 +23,8 @@ Conditionals:
 Loops:
     - Loopz.java
 
+ArrayList:
+    - Holiday.java 
 HashMaps:
     - Conditionals.java
 
