@@ -21,12 +21,12 @@ import java.util.HashMap;
 
 public class Data {
     // class variables
-    HashMap<String, String> capitalCities;
+    HashMap<String, Object> capitalCities;
     //DECLARE HashMap<key datatype, value datatype> name;
 
     Data() {
         // constructor class
-        capitalCities = new HashMap<String, String>();
+        capitalCities = new HashMap<String, Object>();
         //INITIALIZE
         capitalCities.put("England", "London");
         //ADD VALUE
@@ -34,6 +34,10 @@ public class Data {
         capitalCities.put("Germany", "Berlin");
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
+        capitalCities.putIfAbsent("num", 5);
+        capitalCities.computeIfPresent("num",
+                                            (key, val) -> (int)val + 5 );
+
     }
 
     void getInfo() {
@@ -43,7 +47,7 @@ public class Data {
             System.out.println("- " + i);
         }
         System.out.printf("capitalCities Values(%d):\n", capitalCities.values().size());
-        for (String i : capitalCities.values()) {
+        for (Object i : capitalCities.values()) {
             System.out.println("- " + i);
         }
     }
@@ -52,7 +56,7 @@ public class Data {
         Data countries = new Data();
         countries.getInfo();
 
-        HashMap<String, Integer> people = new HashMap<String, Integer>();
+        HashMap<String, Object> people = new HashMap<String, Object>();
         // BOTH DECLARE AND INITIALIZE HASHMAP
         people.put("John", 32);
         people.put("Steve", 30);
@@ -60,7 +64,7 @@ public class Data {
         people.remove("Steve");
         //people.clear();
         for (String i : people.keySet()) {
-            System.out.printf("key: %s , value: %d \n", i, people.get(i));
+            System.out.printf("key: %s , value: %s \n", i, people.get(i).toString() );
         }
     }
 }

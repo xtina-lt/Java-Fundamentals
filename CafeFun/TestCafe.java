@@ -1,3 +1,4 @@
+package CafeFun;
 import java.util.ArrayList;
 
 class TestCafe {

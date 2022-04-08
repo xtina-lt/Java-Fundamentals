@@ -1,3 +1,4 @@
+package CafeFun;
 import java.util.*;
 
 class CafeUtil {
